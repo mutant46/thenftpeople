@@ -9,15 +9,61 @@ body {
   overflow-x: hidden;
 }
 
-::selection {
-  background: lighten($color: $primary-color, $amount: 10);
-  color: $white;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+
+  &.navbar-toggler.ml-auto.hidden-sm-up.float-xs-right:focus {
+    outline: none !important;
+  }
+}
+
+.overlay {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $bg-color;
+    pointer-events: none;
+    opacity: 0.45;
+    z-index: -1;
+  }
+}
+
+.wrapper {
+  padding: 0 3rem;
+  @include tablet {
+    padding: 0 1.5rem;
+  }
+
+  @include desktop-xxl {
+    padding: 0 6rem;
+  }
+}
+
+// animations
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

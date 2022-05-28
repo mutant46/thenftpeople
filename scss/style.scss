@@ -16,6 +16,16 @@ VERSION:	1.0.0
 
 @import "common";
 
-@import "templates/index";
+// components
 
-@import "../plugins/aos/sass/aos.scss";
+@import "components/navigation";
+
+@import "components/hero";
+
+// aos
+
+@import "../plugins/aos/sass/core";
+
+@import "../plugins/aos/sass/easing";
+
+@import "../plugins/aos/sass/animations";

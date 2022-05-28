@@ -1,0 +1,21 @@
+.hero-btn {
+    width: max-content;
+    padding: 1em 2em;
+    color: white;
+    font-family: poppins-semibold;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #2755b7, #6e43a3);
+    background-size: 400% 400%;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    &:hover {
+        color: white;
+        animation: gradient 4s ease infinite;
+    }
+
+    @include tablet {
+        padding: 1em 1.5em;
+    }
+}
