@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="plugins/aos/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>The Space Troppers</title>
   </head>
@@ -39,35 +40,37 @@
         <div class="collapse navbar-collapse pt-3 pt-lg-0" id="NavbarLinks">
           <ul class="main-nav navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link px-md-3 px-lg-4">collection</a>
+              <a href="#collection" class="nav-link px-md-3 px-lg-4"
+                >collection</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-md-3 px-lg-4">roadmap</a>
+              <a href="#roadmap" class="nav-link px-md-3 px-lg-4">roadmap</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-md-3 px-lg-4">team</a>
+              <a href="#team" class="nav-link px-md-3 px-lg-4">team</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-md-3 px-lg-4">faq</a>
+              <a href="#faq" class="nav-link px-md-3 px-lg-4">faq</a>
             </li>
           </ul>
 
           <ul class="navbar-nav social-links ms-auto">
             <li class="nav-item">
-              <a href="" class="nav-link px-lg-3">
+              <a href="" class="nav-link ps-lg-3">
                 <img
                   src="assests/icons/twitter.png"
                   alt="space troppers twitter"
-                  width="37"
+                  width="38"
                 />
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link px-lg-3">
+              <a href="" class="nav-link ps-lg-3">
                 <img
                   src="assests/icons/discord.png"
                   alt="space troppers discord"
-                  width="37"
+                  width="38"
                 />
               </a>
             </li>
@@ -78,30 +81,233 @@
     <!-- Info : Viewport Section -->
     <div class="container-fluid hero overlay">
       <div class="row h-100">
+        <div class="helper-col col-md-1"></div>
+        <!-- Info : Hero Intro Section -->
         <div
-          class="col-md-6 d-flex flex-column justify-content-center mt-5 mt-md-0"
+          class="col-md-9 col-lg-6 px-0 d-flex flex-column justify-content-center"
         >
           <div class="hero-intro">
             <img
               src="assests/logo/logo-png-1.png"
-              alt="Space troppers logo"
-              width="30%"
+              alt="Space troopers logo"
+              width="35%"
+              class="mb-4"
             />
-            <h1 class="pe-3 pe-md-0 hero-heading">
+            <h1 class="hero-heading">
               Collect NFT’s For your Metaverse World.
             </h1>
-            <a href="#" class="hero-btn d-inline-block"> Join Our Discord</a>
+            <div class="hero-btns">
+              <a href="#" class="hero-btn d-inline-block">Join Our Discord</a>
+              <a href="#" class="hero-btn-outline ms-xs-0 ms-3 d-inline-block"
+                >Join our Twitter</a
+              >
+            </div>
           </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
     </div>
+
+    <!-- Info : Introduction -->
+
+    <div class="project-intro container-fluid wrapper margin-top">
+      <div
+        class="intro-heading d-flex align-items-center"
+        data-aos="fade-right"
+      >
+        <div class="circle"></div>
+        <h2 class="site-heading ms-4 mt-2">introduction</h2>
+      </div>
+      <div class="desc mt-4" data-aos="fade-up">
+        <p>
+          Space Troopers is an art and gaming project, with utility. We are
+          offering 3d modelled art, each individually rendered and all unique
+          from one another, highly detailed and stylised, with original traits
+          and some inspired by classic sci-fi. We are aiming for our art to be
+          good enough to be considered an art project outright, but we are also
+          providing reasons to hold your Space Trooper by adding returns and
+          utility. Some of our NFTs will offer passive income,
+          <span>Ada</span> sent straight to the wallet containing them from a
+          portion of secondary sales. In addition we will also be offering a
+          chance to enter your Space Trooper in daily battle royale combat via
+          our website! They will earn medals over the week and at the end of the
+          week, the four with the highest (and one with the lowest) medals will
+          be airdropped <span>Ada</span>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Info : Collection -->
+
+    <!-- Info : Team -->
+
+    <!-- Info : Roadmap -->
+
+    <!-- Info : FAQ -->
+
+    <div class="faq container-fluid wrapper margin-top" id="faq">
+      <div class="faq-heading d-flex align-items-center" data-aos="zoom-in">
+        <div class="circle"></div>
+        <h2 class="site-heading ms-4 mt-2">faq</h2>
+      </div>
+      <div class="questions mt-4">
+        <!-- Info : Question wrapper  -->
+        <div class="question-wrapper" data-aos="zoom-out">
+          <div class="question" id="question-1">
+            <a
+              href="#one"
+              data-id="question-1"
+              data-bs-toggle="collapse"
+              class="question-link px-2 d-flex align-items-center justify-content-between"
+            >
+              <span>What is space troopers?</span>
+              <img src="assests/icons/plus.png" alt="plus icon" width="30px" />
+            </a>
+          </div>
+          <div id="one" class="collapse">
+            <div>
+              <p class="py-3 px-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Info : Question wrapper  -->
+        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="200">
+          <div class="question" id="question-2">
+            <a
+              href="#two"
+              data-id="question-2"
+              data-bs-toggle="collapse"
+              class="question-link px-2 d-flex align-items-center justify-content-between"
+            >
+              <span>What is space troopers?</span>
+              <img src="assests/icons/plus.png" alt="plus icon" width="30px" />
+            </a>
+          </div>
+          <div id="two" class="collapse">
+            <div>
+              <p class="py-3 px-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Info : Question wrapper  -->
+        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="300">
+          <div class="question" id="question-3">
+            <a
+              href="#three"
+              data-id="question-3"
+              data-bs-toggle="collapse"
+              class="question-link px-2 d-flex align-items-center justify-content-between"
+            >
+              <span>What is space troopers?</span>
+              <img src="assests/icons/plus.png" alt="plus icon" width="30px" />
+            </a>
+          </div>
+          <div id="three" class="collapse">
+            <div>
+              <p class="py-3 px-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Info : question-wrapper -->
+        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="400">
+          <div class="question" id="question-4">
+            <a
+              href="#four"
+              data-id="question-4"
+              data-bs-toggle="collapse"
+              class="question-link px-2 d-flex align-items-center justify-content-between"
+            >
+              <span>What is space troopers?</span>
+              <img src="assests/icons/plus.png" alt="plus icon" width="30px" />
+            </a>
+          </div>
+          <div id="four" class="collapse">
+            <div>
+              <p class="py-3 px-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Info : Footer -->
+    <footer class="container-fluid wrapper margin-top">
+      <h2 class="site-heading" data-aos="flip-down">future plan</h2>
+      <div class="container-fluid" data-aos="fade-left">
+        <div class="row">
+          <div class="col-sm-10 col-lg-8 p-0">
+            <p>
+              In addition to game development our immediate plan after mint is
+              to start work on an airdrop for holders, to allow 'destiny
+              choices' - a mechanic which will allow you to send your NFT on
+              missions to evolve them. The decisions made by the holders in
+              destiny choices will shape what happens in the Space Troopers
+              universe and therefore what Season 2 looks like.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Info : Line Break -->
+      <div class="deadline my-2"></div>
+      <!-- Info : Site & Socail Links -->
+      <div class="contianer-fluid footer-end mt-3 mb-5">
+        <div class="row gap-3 gap-md-0">
+          <div
+            class="footer-links col-md-8 d-flex align-items-center flex-wrap"
+          >
+            <a href="#collection" class="pe-4 pe-lg-5">collection</a>
+            <a href="#roadmap" class="pe-4 pe-lg-5">roadmap</a>
+            <a href="#team" class="pe-4 pe-lg-5">team</a>
+            <a href="#faq" class="pe-4 pe-lg-5">faq</a>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-md-end"
+          >
+            <a href="#" class="pe-3 pe-md-0 ps-md-3 ps-lg-4">
+              <img
+                src="assests/icons/twitter.png"
+                alt="space troppers twitter"
+                width="35"
+              />
+            </a>
+            <a href="#" class="pe-3 pe-md-0 ps-md-3 ps-lg-4">
+              <img
+                src="assests/icons/discord.png"
+                alt="space troppers discord"
+                width="35"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Info : Scripts -->
-    <script src="plugins/aos/aos.js"></script>
-    <script src="plugins/anime/anime.min.js"></script>
     <script src="plugins/jQuery/jquery.min.js"></script>
+    <script src="plugins/anime/anime.min.js"></script>
     <script src="plugins/slick/slick.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -22,10 +22,15 @@ VERSION:	1.0.0
 
 @import "components/hero";
 
-// aos
+@import "components/intro";
 
-@import "../plugins/aos/sass/core";
+@import "components/faq";
 
-@import "../plugins/aos/sass/easing";
+@import "components/footer";
 
-@import "../plugins/aos/sass/animations";
+// // aos
+// @import "../plugins/aos/sass/core";
+
+// @import "../plugins/aos/sass/easing";
+
+// @import "../plugins/aos/sass/animations";

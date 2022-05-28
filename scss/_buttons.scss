@@ -1,14 +1,19 @@
-.hero-btn {
+.hero-btn,
+.hero-btn-outline {
     width: max-content;
     padding: 1em 2em;
     color: white;
     font-family: poppins-semibold;
     letter-spacing: 0.5px;
     font-weight: normal;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #2755b7, #6e43a3);
-    background-size: 400% 400%;
     border-radius: 5px;
     margin-top: 1.5em;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #2755b7, #6e43a3);
+    background-size: 400% 400%;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     &:hover {
         color: white;
@@ -17,5 +22,16 @@
 
     @include tablet {
         padding: 1em 1.5em;
+    }
+}
+
+.hero-btn-outline {
+    border: 0.5px solid whitesmoke;
+    transition: all 0.6s ease;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px alpha($color: #6e43a3, $alpha: 0.5);
+    &:hover {
+        background-color: white;
+        color: #6e43a3;
     }
 }
