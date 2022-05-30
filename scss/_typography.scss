@@ -30,6 +30,10 @@ p,
   font-size: 15px;
   line-height: 2.25;
   font-family: poppins-semibold;
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 h2,

@@ -1,7 +1,8 @@
 .hero-btn,
 .hero-btn-outline {
-    width: max-content;
-    padding: 1em 2em;
+    width: 180px;
+    text-align: center;
+    padding: 1.25em 0em;
     color: white;
     font-family: poppins-semibold;
     letter-spacing: 0.5px;
@@ -9,6 +10,10 @@
     border-radius: 5px;
     margin-top: 1.5em;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+
+    @include tablet {
+        padding: 1em 0em;
+    }
 }
 
 .hero-btn {
@@ -19,20 +24,17 @@
         color: white;
         animation: gradient 4s ease infinite;
     }
-
-    @include tablet {
-        padding: 1em 1.5em;
-    }
 }
 
 .hero-btn-outline {
     opacity: 0;
-    border: 0.5px solid whitesmoke;
+    background-color: white;
     transition: all 0.6s ease;
     font-weight: bold;
+    color: #6e43a3;
     text-shadow: 1px 1px 10px rgba(110, 67, 163, 0.5);
     &:hover {
-        background-color: white;
-        color: #6e43a3;
+        background-color: $special-color;
+        color: white;
     }
 }

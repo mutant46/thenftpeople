@@ -41,6 +41,13 @@ p,
   font-family: poppins-semibold;
 }
 
+@media (max-width: 575px) {
+  p,
+  .paragraph {
+    font-size: 14px;
+  }
+}
+
 h2,
 h3,
 h4,
@@ -127,10 +134,9 @@ h6,
 
 .hero-btn,
 .hero-btn-outline {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 1em 2em;
+  width: 180px;
+  text-align: center;
+  padding: 1.25em 0em;
   color: white;
   font-family: poppins-semibold;
   letter-spacing: 0.5px;
@@ -138,6 +144,13 @@ h6,
   border-radius: 5px;
   margin-top: 1.5em;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .hero-btn,
+  .hero-btn-outline {
+    padding: 1em 0em;
+  }
 }
 
 .hero-btn {
@@ -152,24 +165,19 @@ h6,
           animation: gradient 4s ease infinite;
 }
 
-@media (max-width: 767px) {
-  .hero-btn {
-    padding: 1em 1.5em;
-  }
-}
-
 .hero-btn-outline {
   opacity: 0;
-  border: 0.5px solid whitesmoke;
+  background-color: white;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   font-weight: bold;
+  color: #6e43a3;
   text-shadow: 1px 1px 10px rgba(110, 67, 163, 0.5);
 }
 
 .hero-btn-outline:hover {
-  background-color: white;
-  color: #6e43a3;
+  background-color: #fe8336;
+  color: white;
 }
 
 *,
@@ -475,6 +483,19 @@ nav .main-nav .nav-link .active {
   }
 }
 
+@media (max-width: 575px) {
+  nav .navbar-brand {
+    font-size: 1.25em;
+  }
+  nav .navbar-brand img {
+    width: 30px;
+  }
+  nav #hamburger {
+    width: 90%;
+    padding: 0;
+  }
+}
+
 .hero {
   height: 100vh;
   background: url("/assests/background/main-bg.jpg") top right;
@@ -516,7 +537,7 @@ nav .main-nav .nav-link .active {
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 437px) {
   .hero .hero-btns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,6 +550,10 @@ nav .main-nav .nav-link .active {
   .hero .hero-intro .hero-btn-outline {
     margin-left: 0em;
   }
+}
+
+.project-intro {
+  overflow: hidden;
 }
 
 .project-intro span {
@@ -638,6 +663,10 @@ nav .main-nav .nav-link .active {
   }
 }
 
+.roadmap {
+  overflow: hidden;
+}
+
 .roadmap p {
   font-family: poppins-medium;
   line-height: 25px;
@@ -695,6 +724,7 @@ nav .main-nav .nav-link .active {
 }
 
 .team {
+  overflow: hidden;
   background-image: url("/assests/background/team-2.png");
   background-size: cover;
   background-position: center;
@@ -736,6 +766,7 @@ nav .main-nav .nav-link .active {
   .team {
     background-size: cover;
     background-position: bottom center;
+    margin-top: 2em;
   }
 }
 
@@ -792,6 +823,10 @@ nav .main-nav .nav-link .active {
   .faq .question img {
     width: 25px;
   }
+}
+
+footer {
+  overflow: hidden;
 }
 
 footer .deadline {

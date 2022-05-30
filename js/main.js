@@ -44,7 +44,7 @@ $(document).ready(() => {
     event.preventDefault();
   });
 
-  // info : navbar-collapse
+  // info : navbar-collapse on link click
   $(".navbar .nav-link").each((index, link) => {
     $(link).on("click", () => {
       if ($(".navbar-collapse").hasClass("show")) {
@@ -53,6 +53,12 @@ $(document).ready(() => {
     });
   });
 
+  // info : navbar-collapse on logo click
+  $(".navbar-brand").on("click", () => {
+    if ($(".navbar-collapse").hasClass("show")) {
+      $(".navbar-collapse").removeClass("show");
+    }
+  });
   // info : timeline animtion
   var t1 = anime.timeline({
     easing: "cubicBezier(.5, .05, .1, .3)",
