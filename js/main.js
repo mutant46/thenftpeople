@@ -59,6 +59,7 @@ $(document).ready(() => {
       $(".navbar-collapse").removeClass("show");
     }
   });
+  
   // info : timeline animtion
   var t1 = anime.timeline({
     easing: "cubicBezier(.5, .05, .1, .3)",

@@ -134,7 +134,7 @@ h6,
 
 .hero-btn,
 .hero-btn-outline {
-  width: 180px;
+  width: 190px;
   text-align: center;
   padding: 1.25em 0em;
   color: white;
@@ -670,6 +670,10 @@ nav .main-nav .nav-link .active {
 .roadmap p {
   font-family: poppins-medium;
   line-height: 25px;
+}
+
+.roadmap .hero-btn {
+  margin-top: 1em;
 }
 
 .roadmap .roadmap-heading .site-heading {
