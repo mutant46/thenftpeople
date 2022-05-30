@@ -13,7 +13,7 @@ $(document).ready(() => {
       $("#" + $(link).attr("data-id")).toggleClass("faq-active");
     });
   });
-  // info : smooth scroll
+  // info : smooth scroll with offset so fixed navbar doesn't cover the section
   $('a[href^="#"]').on("click", function (e) {
     let hash = this.hash;
     if (
