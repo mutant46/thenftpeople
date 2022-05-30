@@ -500,7 +500,6 @@ nav .main-nav .nav-link .active {
   height: 100vh;
   background: url("/assests/background/main-bg.jpg") top right;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
