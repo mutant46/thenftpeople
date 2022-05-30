@@ -9,14 +9,13 @@
       content="Space Troopers is an art and gaming project, with utility. We are offering 3d modelled art, each individually rendered and all unique from one another, highly detailed and stylised, with original traits and some inspired by classic sci-fi. "
     />
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/slick/slick.css" />
     <link rel="stylesheet" href="plugins/aos/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>The Space Troppers</title>
   </head>
   <body>
     <!-- Info : Header -->
-    <nav class="navbar navbar-expand-lg position-fixed w-100">
+    <nav class="navbar navbar-expand-lg overlay position-fixed w-100">
       <div class="container-fluid wrapper py-1">
         <a class="navbar-brand text-white" href="#">
           <img src="assests/icons/logo-nav.png" alt="" width="45" />
@@ -34,15 +33,14 @@
             aria-controls="NavbarLinks"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            id="hamburger"
           />
         </button>
 
         <div class="collapse navbar-collapse pt-3 pt-lg-0" id="NavbarLinks">
           <ul class="main-nav navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="#collection" class="nav-link px-md-3 px-lg-4"
-                >collection</a
-              >
+              <a href="#collection" class="nav-link px-md-3 px-lg-4">collection</a>
             </li>
             <li class="nav-item">
               <a href="#roadmap" class="nav-link px-md-3 px-lg-4">roadmap</a>
@@ -57,7 +55,11 @@
 
           <ul class="navbar-nav social-links ms-auto">
             <li class="nav-item">
-              <a href="" class="nav-link ps-lg-3">
+              <a
+                href="https://twitter.com/spacetrooperNFT"
+                target="_blank"
+                class="nav-link ps-lg-3"
+              >
                 <img
                   src="assests/icons/twitter.png"
                   alt="space troppers twitter"
@@ -66,7 +68,11 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link ps-lg-3">
+              <a
+                target="_blank"
+                href="https://discord.com/invite/qTPcjM4jmQ"
+                class="nav-link ps-lg-3"
+              >
                 <img
                   src="assests/icons/discord.png"
                   alt="space troppers discord"
@@ -91,15 +97,21 @@
               src="assests/logo/logo-png-1.png"
               alt="Space troopers logo"
               width="35%"
-              class="mb-4"
+              class="hero-img mb-4"
             />
-            <h1 class="hero-heading">
-              Collect NFT’s For your Metaverse World.
-            </h1>
+            <h1 class="hero-heading">Collect NFT’s For your Metaverse World.</h1>
             <div class="hero-btns">
-              <a href="#" class="hero-btn d-inline-block">Join Our Discord</a>
-              <a href="#" class="hero-btn-outline ms-xs-0 ms-3 d-inline-block"
-                >Join our Twitter</a
+              <a
+                href="https://discord.com/invite/qTPcjM4jmQ"
+                target="_blank"
+                class="hero-btn d-inline-block"
+                >Join Our Discord</a
+              >
+              <a
+                href="https://twitter.com/spacetrooperNFT"
+                target="_blank"
+                class="hero-btn-outline d-inline-block"
+                >Join Our Twitter</a
               >
             </div>
           </div>
@@ -110,52 +122,367 @@
     <!-- Info : Introduction -->
 
     <div class="project-intro container-fluid wrapper margin-top">
-      <div
-        class="intro-heading d-flex align-items-center"
-        data-aos="fade-right"
-      >
+      <div class="intro-heading d-flex align-items-center" data-aos="flip-down">
         <div class="circle"></div>
         <h2 class="site-heading ms-4 mt-2">introduction</h2>
       </div>
-      <div class="desc mt-4" data-aos="fade-up">
+      <div class="desc mt-4" data-aos="fade-up-left">
         <p>
-          Space Troopers is an art and gaming project, with utility. We are
-          offering 3d modelled art, each individually rendered and all unique
-          from one another, highly detailed and stylised, with original traits
-          and some inspired by classic sci-fi. We are aiming for our art to be
-          good enough to be considered an art project outright, but we are also
-          providing reasons to hold your Space Trooper by adding returns and
-          utility. Some of our NFTs will offer passive income,
-          <span>Ada</span> sent straight to the wallet containing them from a
-          portion of secondary sales. In addition we will also be offering a
-          chance to enter your Space Trooper in daily battle royale combat via
-          our website! They will earn medals over the week and at the end of the
-          week, the four with the highest (and one with the lowest) medals will
-          be airdropped <span>Ada</span>.
+          Space Troopers is an art and gaming project, with utility. We are offering
+          3d modelled art, each individually rendered and all unique from one
+          another, highly detailed and stylised, with original traits and some
+          inspired by classic sci-fi. We are aiming for our art to be good enough to
+          be considered an art project outright, but we are also providing reasons to
+          hold your Space Trooper by adding returns and utility. Some of our NFTs
+          will offer passive income,
+          <span>Ada</span> sent straight to the wallet containing them from a portion
+          of secondary sales. In addition we will also be offering a chance to enter
+          your Space Trooper in daily battle royale combat via our website! They will
+          earn medals over the week and at the end of the week, the four with the
+          highest (and one with the lowest) medals will be airdropped
+          <span>Ada</span>.
         </p>
       </div>
     </div>
 
     <!-- Info : Collection -->
 
-    <!-- Info : Team -->
+    <div class="collection margin-top" id="collection">
+      <div class="collection-intro" data-aos="zoom-in-up">
+        <h1 class="site-heading underline text-center mb-4">Collection</h1>
+        <p class="centered-p">
+          Space Troopers is a family-run play to earn Cardano NFT project providing a
+          sci-fi gladiator management game enabling players to earn weekly $Ada in
+          arena rewards.
+        </p>
+      </div>
+
+      <div class="marquee pt-5" data-aos="fade-in" data-aos-delay="400">
+        <!-- info : zoomed out nft collection -->
+        <div class="marque">
+          <div class="marquee-left d-flex">
+            <img
+              src="/assests/zoomOut/Cityanimate.png"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/cycles04.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/flamethrower03.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/helmet13.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/image_05 - Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/necro13.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/oni03 - Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/oni04.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/pr Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/Space.png"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/spider01.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+
+            <!-- Info : duplicates are added to get a continous moving effect -->
+            <img
+              src="/assests/zoomOut/Cityanimate.png"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/cycles04.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/flamethrower03.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/helmet13.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="/assests/zoomOut/image_05 - Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+          </div>
+          <!-- Info : marquee right -->
+          <div class="marquee-right d-flex">
+            <img
+              src="assests/zoomIn/AB5EF3B6-5A9C-489C-B3BB-3AE4E7CCE922.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/B56B628B-A526-4E54-8ED7-4CF94025783B.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/EDF52C14-094F-44DF-ACE4-56237B1D5234.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/flamethrower03 - Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/image_05 - Copy2.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/oni03 - Copy (1).jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/0642044A-D07F-4F37-A8C8-E0572A457803.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+
+            <!-- Info : duplicates are added to get a continous moving effect -->
+            <img
+              src="assests/zoomIn/AB5EF3B6-5A9C-489C-B3BB-3AE4E7CCE922.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/B56B628B-A526-4E54-8ED7-4CF94025783B.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/EDF52C14-094F-44DF-ACE4-56237B1D5234.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/flamethrower03 - Copy.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+            <img
+              src="assests/zoomIn/image_05 - Copy2.jpg"
+              alt=""
+              class="me-3"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Info : Roadmap -->
+
+    <div class="roadmap container-fluid wrapper margin-top" id="roadmap">
+      <div class="row roadmap-heading" data-aos="flip-right">
+        <div class="col-md-12">
+          <h2 class="site-heading underline mb-4">roadmap</h2>
+        </div>
+        <div class="col-md-6" data-aos="">
+          <p class="mb-4">
+            This is our roadmap so far, but this is only the begining, we want to
+            build our project around our community, so if you have more ideas we are
+            all ears.
+          </p>
+          <a href="https://discord.com/invite/qTPcjM4jmQ" class="hero-btn"
+            >Join Our Discord</a
+          >
+        </div>
+      </div>
+      <!-- info : roadmap One -->
+      <div class="map container-fluild py-4 py-md-5">
+        <div
+          class="d-flex flex-wrap justify-content-center justify-content-md-start"
+        >
+          <div class="box me-md-4 mt-4" data-aos="fade-down">
+            <h3>1</h3>
+            <h5>Q2 2022</h5>
+            <p>
+              Community building, Whitelisting, Competitions, Art reveals,
+              Collaborations, Playtesting.
+            </p>
+          </div>
+          <div class="box me-md-4 mt-4" data-aos="fade-down" data-aos-delay="200">
+            <h3>2</h3>
+            <h5>Q3 2022</h5>
+            <p>
+              Mint (late Q2 or early Q3), Game Launch, Game development, Passive
+              income airdrop, Destiny Choices Update, Space Trooper Medals holder
+              airdrop and public mint for promotion mechanic, Charity donation.
+            </p>
+          </div>
+          <div class="box me-md-4 mt-4" data-aos="fade-down" data-aos-delay="300">
+            <h3>3</h3>
+            <h5>Q4 2022</h5>
+            <p>
+              Further game development, Passive income airdrop, Charity donation,
+              Season 2 reveal influenced by destiny choices in Q3 Possibilities: 3D
+              printing of Space Trooper, models Space Troopers joining the metaverse.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info : Team -->
+
+    <div id="team" class="team overlay margin-top container-fluid wrapper">
+      <div class="team-intro">
+        <h2 class="site-heading text-center">team</h2>
+        <p class="text-center centered-p">
+          Some teams call themselves a family, but we actually are one! All designers
+          with a passion for horror culture, art, monsters, litrature, mysteris,
+          thrillers and so.
+        </p>
+      </div>
+
+      <div class="members bg-dang mt-5" data-aos="fade-up">
+        <div class="member p-3 text-center">
+          <img src="/assests/team-1.jpg" alt="" class="member-img" />
+          <h4 class="member-name mt-3 text-dark">Project Lead</h4>
+          <span class="member-title d-inline-block pb-3 pt-1 fw-bold"
+            >Digiwombat</span
+          >
+          <div class="member-links">
+            <a href="https://twitter.com/digiwombat" target="_blank"
+              ><img
+                src="/assests/icons/twitter.png"
+                alt=""
+                width="45px"
+                class="px-1"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/jade-newbold-eventsmarketing/"
+              target="_blank"
+              ><img
+                src="/assests/icons/linkedin.png"
+                alt=""
+                width="45px"
+                class="px-1"
+            /></a>
+          </div>
+        </div>
+        <div class="member p-3 text-center">
+          <img src="/assests/team-2.jpg" alt="" class="member-img" />
+          <h4 class="member-name mt-3 text-dark">Project Manager</h4>
+          <span class="member-title d-inline-block pb-3 pt-1 fw-bold">AL</span>
+          <div class="member-links">
+            <a href="https://twitter.com/spacetrooperNFT" target="_blank"
+              ><img
+                src="/assests/icons/twitter.png"
+                alt=""
+                width="45px"
+                class="px-1"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/alex-mertens-a8068946/"
+              target="_blank"
+              ><img
+                src="/assests/icons/linkedin.png"
+                alt=""
+                width="45px"
+                class="px-1"
+            /></a>
+          </div>
+        </div>
+        <div class="member p-3 text-center">
+          <img src="/assests/zoomOut/necro13.jpg" alt="" class="member-img" />
+          <h4 class="member-name mt-3 text-dark">Developer</h4>
+        </div>
+        <div class="member p-3 text-center">
+          <img src="/assests/zoomOut/spider01.jpg" alt="" class="member-img" />
+          <h4 class="member-name mt-3 text-dark">Artwork</h4>
+          <span class="member-title d-inline-block pb-3 pt-1 fw-bold"
+            >Anonymous</span
+          >
+        </div>
+      </div>
+    </div>
 
     <!-- Info : FAQ -->
 
     <div class="faq container-fluid wrapper margin-top" id="faq">
-      <div class="faq-heading d-flex align-items-center" data-aos="zoom-in">
+      <div class="faq-heading d-flex align-items-center" data-aos="fade-left">
         <div class="circle"></div>
         <h2 class="site-heading ms-4 mt-2">faq</h2>
       </div>
       <div class="questions mt-4">
         <!-- Info : Question wrapper  -->
-        <div class="question-wrapper" data-aos="zoom-out">
-          <div class="question" id="question-1">
+        <div class="question-wrapper" data-aos="zoom-in">
+          <div class="question" id="question-one">
             <a
               href="#one"
-              data-id="question-1"
+              data-id="question-one"
               data-bs-toggle="collapse"
               class="question-link px-2 d-flex align-items-center justify-content-between"
             >
@@ -167,19 +494,19 @@
             <div>
               <p class="py-3 px-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
         </div>
         <!-- Info : Question wrapper  -->
-        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="200">
-          <div class="question" id="question-2">
+        <div class="question-wrapper" data-aos="zoom-in" data-aos-delay="200">
+          <div class="question" id="question-two">
             <a
               href="#two"
-              data-id="question-2"
+              data-id="question-two"
               data-bs-toggle="collapse"
               class="question-link px-2 d-flex align-items-center justify-content-between"
             >
@@ -191,19 +518,19 @@
             <div>
               <p class="py-3 px-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
         </div>
         <!-- Info : Question wrapper  -->
-        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="300">
-          <div class="question" id="question-3">
+        <div class="question-wrapper" data-aos="zoom-in" data-aos-delay="400">
+          <div class="question" id="question-three">
             <a
               href="#three"
-              data-id="question-3"
+              data-id="question-three"
               data-bs-toggle="collapse"
               class="question-link px-2 d-flex align-items-center justify-content-between"
             >
@@ -215,19 +542,19 @@
             <div>
               <p class="py-3 px-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
         </div>
         <!-- Info : question-wrapper -->
-        <div class="question-wrapper" data-aos="zoom-out" data-aos-delay="400">
-          <div class="question" id="question-4">
+        <div class="question-wrapper" data-aos="zoom-in" data-aos-delay="600">
+          <div class="question" id="question-four">
             <a
               href="#four"
-              data-id="question-4"
+              data-id="question-four"
               data-bs-toggle="collapse"
               class="question-link px-2 d-flex align-items-center justify-content-between"
             >
@@ -239,9 +566,9 @@
             <div>
               <p class="py-3 px-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
@@ -253,16 +580,16 @@
     <!-- Info : Footer -->
     <footer class="container-fluid wrapper margin-top">
       <h2 class="site-heading" data-aos="flip-down">future plan</h2>
-      <div class="container-fluid" data-aos="fade-left">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-10 col-lg-8 p-0">
-            <p>
-              In addition to game development our immediate plan after mint is
-              to start work on an airdrop for holders, to allow 'destiny
-              choices' - a mechanic which will allow you to send your NFT on
-              missions to evolve them. The decisions made by the holders in
-              destiny choices will shape what happens in the Space Troopers
-              universe and therefore what Season 2 looks like.
+            <p data-aos="fade-left">
+              In addition to game development our immediate plan after mint is to
+              start work on an airdrop for holders, to allow 'destiny choices' - a
+              mechanic which will allow you to send your NFT on missions to evolve
+              them. The decisions made by the holders in destiny choices will shape
+              what happens in the Space Troopers universe and therefore what Season 2
+              looks like.
             </p>
           </div>
         </div>
@@ -270,19 +597,20 @@
       <!-- Info : Line Break -->
       <div class="deadline my-2"></div>
       <!-- Info : Site & Socail Links -->
-      <div class="contianer-fluid footer-end mt-3 mb-5">
+      <div
+        class="contianer-fluid footer-end mt-3 mb-5"
+        data-aos-offset="0"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
         <div class="row gap-3 gap-md-0">
-          <div
-            class="footer-links col-md-8 d-flex align-items-center flex-wrap"
-          >
+          <div class="footer-links col-md-8 d-flex align-items-center flex-wrap">
             <a href="#collection" class="pe-4 pe-lg-5">collection</a>
             <a href="#roadmap" class="pe-4 pe-lg-5">roadmap</a>
             <a href="#team" class="pe-4 pe-lg-5">team</a>
             <a href="#faq" class="pe-4 pe-lg-5">faq</a>
           </div>
-          <div
-            class="col-md-4 d-flex align-items-center justify-content-md-end"
-          >
+          <div class="col-md-4 d-flex align-items-center justify-content-md-end">
             <a href="#" class="pe-3 pe-md-0 ps-md-3 ps-lg-4">
               <img
                 src="assests/icons/twitter.png"
@@ -305,7 +633,6 @@
     <!-- Info : Scripts -->
     <script src="plugins/jQuery/jquery.min.js"></script>
     <script src="plugins/anime/anime.min.js"></script>
-    <script src="plugins/slick/slick.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
     <script src="plugins/aos/aos.js"></script>
     <script src="js/main.js"></script>

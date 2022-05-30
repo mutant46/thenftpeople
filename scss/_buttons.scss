@@ -26,10 +26,11 @@
 }
 
 .hero-btn-outline {
+    opacity: 0;
     border: 0.5px solid whitesmoke;
     transition: all 0.6s ease;
     font-weight: bold;
-    text-shadow: 1px 1px 10px alpha($color: #6e43a3, $alpha: 0.5);
+    text-shadow: 1px 1px 10px rgba(110, 67, 163, 0.5);
     &:hover {
         background-color: white;
         color: #6e43a3;
